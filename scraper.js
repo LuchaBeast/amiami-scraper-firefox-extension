@@ -9,7 +9,7 @@ browser.browserAction.onClicked.addListener((tab) => {
     browser.runtime.onMessage.addListener(returned_images);
 
     function returned_images(message) {
-        browser.downloads.download({url: message.image, filename: "scraped_images/"+"image "+message.image_index+"."+message.file_ext, saveAs: false});
+        browser.downloads.download({url: message.image, filename: "scraped_images/"+message.name+" "+message.image_index+"."+message.file_ext, saveAs: false});
     }
 
 });
