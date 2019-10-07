@@ -6,10 +6,10 @@ browser.browserAction.onClicked.addListener((tab) => {
         allFrames: true
     });
 
-    browser.runtime.onMessage.addListener(notify);
+    browser.runtime.onMessage.addListener(returned_images);
 
-    function notify(message) {
-        console.log(message.image);
+    function returned_images(message) {
+        browser.downloads.download({url: message.image, filename: "scraped_images/"+"image "+message.image_index+"."+message.file_ext, saveAs: false});
     }
-    
+
 });
