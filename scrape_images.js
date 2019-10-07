@@ -6,6 +6,7 @@
     let image_list = document.querySelectorAll("ul.item-image__list > li > img");
 
     for (let image_counter = 0; image_counter < image_list.length; image_counter++) {
-        console.log(image_list[image_counter].src);
+        browser.runtime.sendMessage({"image": image_list[image_counter].src})
     }
+
 }

@@ -18,6 +18,6 @@
       "scripts": ["scraper.js"]
     },
 
-    "permissions": ["https://www.amiami.com/*", "activeTab"]
+    "permissions": ["https://www.amiami.com/*", "activeTab", "downloads"]
 
 }
