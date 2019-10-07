@@ -1,0 +1,23 @@
+{
+
+    "manifest_version": 2,
+    "name": "amiami image scraper",
+    "version": "1.0",
+  
+    "description": "Scrapes product images from amiami product pages",
+  
+    "icons": {
+      "48": "icons/index-48.png"
+    },
+
+    "browser_action": {
+        "default_icon": "icons/index-32.png"
+    },
+
+    "background": {
+      "scripts": ["scraper.js"]
+    },
+
+    "permissions": ["https://www.amiami.com/*", "activeTab"]
+
+}
