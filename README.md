@@ -1,5 +1,7 @@
 # amiami Product Image Scraper
-This is a small Firefox add-on I've created to easily and quickly download product images from amiami
+This is a small Firefox add-on I've created to easily and quickly download product images from amiami.
+
+I've only tested this add-on using Firefox 69 and Ubuntu 18.04.
 
 ## How to install
 1. Clone the repository to your machine.
